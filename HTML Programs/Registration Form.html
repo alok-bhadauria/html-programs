@@ -1,0 +1,124 @@
+<HTML>
+    <HEAD>
+      <TITLE> Registration Form </TITLE>
+  
+          <style>
+              #btn {
+                  background-color: #6363fb;
+                  border: none;
+                  border-radius: 3px;
+                  color: white;
+                  padding: 15px 30px;
+                  text-align: center;
+                  font-size: 16px;
+                  cursor: pointer;
+              }
+          </style>
+  
+          <script>
+              function checkPass(){
+                  var pass1 = document.getElementById("p1").value;
+                  var pass2 = document.getElementById("p2").value;
+                  
+                  if (pass1 == pass2){
+                      alert("Registration Success");
+                  }
+                  else{
+                      alert("Password not matched !");
+                  }
+              }2
+          </script>
+  
+    </HEAD>
+    <BODY>
+      <center>
+      <form method="post">
+      <table cellpadding="5" style="font-size: 20px; border: solid red 4px; border-radius: 5%;">
+                      
+      <tr>
+        <th colspan="2" style="font-size: 32px ;"> 
+        <u> REGISTRATION FORM </u> </th> 
+      </tr>
+                      
+      <tr>
+        <td align="right"> First name </td>
+        <td> <input type="text" id="f_name" required style="width: 240px;"></td>
+      </tr>
+            
+      <tr>
+        <td align="right"> Last name </td>
+        <td> <input type="text" id="l_name" required style="width: 240px;"></td>
+      </tr>
+      
+      <tr>
+        <td align="right"> Address </td>
+        <td> <input type="text" id="address" required style="width: 240px;"></td>
+      </tr>
+     
+      <tr>
+        <td align="right"> Email </td>
+        <td> <input type="email" id="email" required style="width: 240px;"></td>
+      </tr>
+      
+      <tr>
+        <td align="right"> Mobile No. </td>
+        <td> <select id="mob_id">
+                     <option> +1 </option>
+                     <option> +20 </option>
+                     <option> +30 </option>
+                     <option> +32 </option>
+                     <option> +33 </option>
+                     <option> +36 </option>
+                     <option> +43 </option>
+                     <option> +45 </option>
+                     <option> +49 </option>
+                     <option> +53 </option>
+                     <option> +57 </option>
+                     <option> +61 </option>
+                     <option> +62 </option>
+                     <option> +91 </option>
+                     <option> +98 </option>
+                 </select>
+  <input type="tel" id="mob_num" minlength="10" maxlength="10" required style="width: 188px;"></td>
+      </tr>
+   
+      <tr>
+        <td align="right"> Photograph </td>
+        <td> <input type="file" id="photo" required></td>
+      </tr>
+      
+      <tr>
+        <td align="right"> ID Proof </td>
+        <td> <input type="file" id="idproof" required></td>
+      </tr>
+      
+      <tr>
+        <td align="right"> Gender </td>
+        <td> <input type="radio" name="gender" id="gen_male"> Male
+                <input type="radio" name="gender" id="gen_female"> Female
+                <input type="radio" name="gender" id="gen_others"> Other </td>
+      </tr>
+      
+      <tr>
+        <td align="right"> Create Password </td>
+        <td> <input type="password" id="p1" minlength="8" required style="width: 240px;"> </td>
+      </tr>
+      
+      <tr>
+        <td align="right"> Confirm Password </td>
+        <td> <input type="password" id="p2" minlength="8" required style="width: 240px;"> </td>
+      </tr>
+      
+      <tr>
+        <td colspan="2">
+        <center> <button id="btn" onclick="checkPass()"> SUBMIT </button>
+        </center></td>
+      </tr>
+      
+      </table>
+      </form>
+      </center>
+  
+    </BODY>
+  </HTML>
+  
